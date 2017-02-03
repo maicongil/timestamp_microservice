@@ -2,7 +2,7 @@ var express = require("express")
     morgan = require("morgan"),
     path = require("path"),
     app = express(),
-    port = 8080;
+    port = process.env.PORT || 8080;
 
 app.use(morgan('combined'));
 
