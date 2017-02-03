@@ -12,6 +12,15 @@
         <li><p>User Story: If it does, it returns both the Unix timestamp and the natural language form of that date.</p></li>
         <li><p>User Story: If it does not contain a date or Unix timestamp, it returns null for those properties.</p></li>
     </ul>
+
+    <h3>Example:</h3>
+
+    <h5>Input:</h5>
+    <p>https://fcctimesms.herokuapp.com/April%2001,%202016</p>
+    <p>https://fcctimesms.herokuapp.com/1459468800</p>
     
+    <h5>Output:</h5>
+    <p>{ "unix": 1459468800, "natural": "April 01, 2016" }</p>
+
 </body>
 </html>

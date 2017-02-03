@@ -45,17 +45,12 @@ app.use(morgan('combined'));
 
     function getNatural(param){
         var date = getDate(param);
-        if(date !== null){
-            return month[date.getMonth()] + " " + date.getDate() + ", " +date.getFullYear();
-        }
+        return date !== null? month[date.getMonth()] + " " + date.getDate() + ", " +date.getFullYear() : date;
     };
 
     function getUnix(param){
         var date = getDate(param);
-        if(date !== null){
-            //miliseconds to seconds
-            return date.getTime() / 1000;
-        }
+        return date !== null? date.getTime() / 1000 : date;
     };
 //END REFACTOR
 
